@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=stylesheet href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="#">
+            <h2>logo</h2>
+        </a>
+    </div>
+    <div class="main-menu">
+        <a href="#" class="menu-a">문자발송
+            <div class="sub-menu">
+                <ul>
+                    <li>단/장문 보내기</li>
+                    <li>포토문자</li>
+                    <li>대량문자</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </a>
+        <a href="#" class="menu-a">광고문자
+            <div class="sub-menu">
+              <ul>
+                  <li>단/장문 보내기</li>
+                  <li>포토문자</li>
+                  <li>대량문자</li>
+                  <li></li>
+                  <li></li>
+              </ul>
+            </div>
+        </a>
+        <a href="#" class="menu-a">선거문자
+        </a>
+        <a href="#" class="menu-a">주소록
+            <div class="sub-menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>주소록 관리</li>
+                    <li>주소록 등록</li>
+                </ul>
+            </div>
+        </a>
+        <a href="#" class="menu-a">마이페이지
+            <div class="sub-menu">
+                <ul>
+                    <li>회원정보수정</li>
+                    <li>충전내역</li>
+                    <li>발송내역</li>
+                    <li>사용내역</li>
+                    <li>회원내역</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <div class="btn-wrap">
+      <a href="#" class="btn btn-main">로그인</a>
+      <a href="#" class="btn btn-sub">회원가입</a>
+    </div>
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- <div class="m-menu">
+        <a href="#">회사소개</a>
+        <a href="#">주요사업</a>
+        <a href="#">R&D</a>
+        <a href="#">인재채용</a>
+        <a href="#">고객센터</a>
+    </div> -->
+</header>
+<section class="swiper swiper-main">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slide1">
+    <div class="overlay"></div>
+      <div class="text-box">
+        <h2 data-aos="fade-up">비지니스의 시작<br> 커뮤니케이션 플랫폼 미스티</h2>
+        <div class="btns" data-aos="fade-up"><a href="#" class="main-btn">자세히 보기</a></div>
+      </div>
+    </div>
+    <div class="swiper-slide slide2">
+      <div class="overlay"></div>
+      <div class="text-box">
+        <h2 data-aos="fade-up">더 넓게, 더 정교하게, 더 풍부하게<br> 카카오 브랜드 메시지</h2>
+        <div class="btns" data-aos="fade-up"><a href="#" class="main-btn">자세히 보기</a></div>
+      </div>
+    </div>
+    <div class="swiper-slide slide3">
+    <div class="overlay"></div>
+      <div class="text-box">
+        <h2 data-aos="fade-up">강력한 데이터 암호화</h2>
+        <div class="btns" data-aos="fade-up"><a href="#" class="main-btn">자세히 보기</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 이 섹션 전용 컨트롤 -->
+  <div class="control">
+    <div class="swiper-pagination swiper-pagination-1st"></div>
+    <div class="swiper-button-prev swiper-prev-1st"></div>
+    <div class="swiper-button-next swiper-next-1st"></div>
+    <!-- 스크롤바 쓰려면 아래 줄을 HTML에도 추가해야 함 -->
+    <!-- <div class="swiper-scrollbar swiper-scrollbar-1st"></div> -->
+  </div>
+</section>
+<section class="section-2nd">
+  <div class="bg-overlay"></div>
+  <div class="tab-slider">
+    <h2 data-aos="fade-up">커뮤니케이션에 필요한 모든 서비스를 나셀프에서 한번에</h2>
+
+
+    <div class="swiper card-swiper">
+
+      <div class="upper" data-aos="fade-up">
+        <div class="tab-option">
+          <input type="radio" name="tab" id="tab1" value="all" checked>
+          <label for="tab1" class="tab-btn">전체 서비스</label>
+
+          <input type="radio" name="tab" id="tab2" value="communication">
+          <label for="tab2" class="tab-btn">문자 서비스</label>
+
+          <input type="radio" name="tab" id="tab3" value="ai">
+          <label for="tab3" class="tab-btn">AI 서비스</label>
+
+          <input type="radio" name="tab" id="tab4" value="auth">
+          <label for="tab4" class="tab-btn">인증 서비스</label>
+        </div>
+        <div class="upper-btns">
+          <!-- 이 섹션 전용 컨트롤 (내부에 두는 게 안전) -->
+          <div class="swiper-button-prev swiper-prev-2nd"></div>
+          <div class="swiper-button-next swiper-next-2nd"></div>
+        </div>
+      </div>
+
+      <div class="swiper-wrapper card-wrap" id="tab-box1">
+        <div class="swiper-slide" data-tags="kakao">
+          <!-- 카카오 브랜드 메시지 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box kakao">
+              <svg width="36px" height="36px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"/>
+                  <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3zm5.907 8.06l1.47-1.424a.472.472 0 0 0-.656-.678l-1.928 1.866V9.282a.472.472 0 0 0-.944 0v2.557a.471.471 0 0 0 0 .222V13.5a.472.472 0 0 0 .944 0v-1.363l.427-.413 1.428 2.033a.472.472 0 1 0 .773-.543l-1.514-2.155zm-2.958 1.924h-1.46V9.297a.472.472 0 0 0-.943 0v4.159c0 .26.21.472.471.472h1.932a.472.472 0 1 0 0-.944zm-5.857-1.092l.696-1.707.638 1.707H9.092zm2.523.488l.002-.016a.469.469 0 0 0-.127-.32l-1.046-2.8a.69.69 0 0 0-.627-.474.696.696 0 0 0-.653.447l-1.661 4.075a.472.472 0 0 0 .874.357l.33-.813h2.07l.299.8a.472.472 0 1 0 .884-.33l-.345-.926zM8.293 9.302a.472.472 0 0 0-.471-.472H4.577a.472.472 0 1 0 0 .944h1.16v3.736a.472.472 0 0 0 .944 0V9.774h1.14c.261 0 .472-.212.472-.472z"/>
+                </g>
+              </svg>
+            </div>
+            <h4>카카오 브랜드 메시지</h4>
+            <p>카카오톡 채널로 고객사 마케팅 수신 동의 회원과 채널 친구 모두에게 광고성 메시지를 발송하는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="kakao" >
+          <!-- 카카오 알림톡 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box kakao">
+              <svg width="36px" height="36px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"/>
+                  <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3zm5.907 8.06l1.47-1.424a.472.472 0 0 0-.656-.678l-1.928 1.866V9.282a.472.472 0 0 0-.944 0v2.557a.471.471 0 0 0 0 .222V13.5a.472.472 0 0 0 .944 0v-1.363l.427-.413 1.428 2.033a.472.472 0 1 0 .773-.543l-1.514-2.155zm-2.958 1.924h-1.46V9.297a.472.472 0 0 0-.943 0v4.159c0 .26.21.472.471.472h1.932a.472.472 0 1 0 0-.944zm-5.857-1.092l.696-1.707.638 1.707H9.092zm2.523.488l.002-.016a.469.469 0 0 0-.127-.32l-1.046-2.8a.69.69 0 0 0-.627-.474.696.696 0 0 0-.653.447l-1.661 4.075a.472.472 0 0 0 .874.357l.33-.813h2.07l.299.8a.472.472 0 1 0 .884-.33l-.345-.926zM8.293 9.302a.472.472 0 0 0-.471-.472H4.577a.472.472 0 1 0 0 .944h1.16v3.736a.472.472 0 0 0 .944 0V9.774h1.14c.261 0 .472-.212.472-.472z"/>
+                </g>
+              </svg>
+            </div>
+            <h4>카카오 알림톡</h4>
+            <p>주문, 결제, 배송 등 정보성 메시지를 스팸 걱정 없이 문자보다 더 저렴하게 보낼 수 있는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="communication,sms" >
+          <!-- 문자 메시지 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box mail">
+            <svg fill="#ffffff" width="30px" height="30px" viewBox="0 0 50 50" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" overflow="inherit"><path d="M2.941 8c-2.941 0-1.47.779 0 1.974l22.059 16.789 22.059-16.737c1.472-1.195 2.941-2.026 0-2.026h-44.118zm-2.941 3.946v24.728c0 1.455 1.488 3.326 2.665 3.326h44.67c1.178 0 2.665-1.871 2.665-3.326v-24.728l-25 19.075-25-19.075z"/></svg>
+            </div>
+            <h4>문자 메시지</h4>
+            <p>SMS, LMS, LMS 짧은 문자부터 긴 문자까지 원하는 형태의 문자메시지를 자유롭게 이용할 수 있는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="communication,rcs" >
+          <!-- RCS -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box mail">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="size-6">
+              <path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
+              <path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
+            </svg>
+            </div>
+            <h4>3세대 문자 RCS</h4>
+            <p>고화질 이미지, 동영상은 물론 다양한 액션 버튼으로 고객을 참여율을 높여주는 3세대 문자메시지</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="ai,chatbot" >
+          <!-- AI 챗봇 서비스 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box">
+            <svg fill="#ffffff" id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M46.3,8.07c7.54,0,15.09,0,22.63,0A16,16,0,0,1,85.3,24.28c0,7.61,0,15.23,0,22.85,0,2.85-.75,3.35-3.49,2.42A14.39,14.39,0,0,0,79.68,49c-3.24-.54-3.25-.53-3.25-3.86q0-10.09,0-20.18c0-5.05-2.94-8-8-8q-22.18,0-44.37,0c-5.05,0-8,2.94-8,8q0,22.18,0,44.37c0,5,2.93,8,8,8,7.92,0,15.83,0,23.74,0,1.66,0,2.75.37,3.52,2a38,38,0,0,0,2.58,3.58c.39.62.84,1.66.58,2.12a2.8,2.8,0,0,1-2.09,1.16c-10.06.07-20.12.2-30.17,0-8-.16-14.92-7.36-15-15.31q-.15-23.63,0-47.26c0-8.23,7.28-15.36,15.55-15.44C30.62,8,38.46,8.08,46.3,8.07Z"/><path d="M78.73,57.75c.44,1,.9,1.94,1.3,2.93.82,2,1.58,4,2.41,5.93A11.24,11.24,0,0,0,89,72.83c2.19.86,4.39,1.71,6.56,2.61a21.79,21.79,0,0,1,2.26,1.3c-1.31.65-2.1,1.11-3,1.45-10.59,4.21-10.67,3.48-15,15a3.62,3.62,0,0,1-.36.8c-.36.51-.77,1-1.17,1.47A6.9,6.9,0,0,1,77.19,94c-.89-2-1.74-4.07-2.48-6.14A12,12,0,0,0,67,80.25c-2-.7-4-1.54-5.94-2.4a7.67,7.67,0,0,1-1.47-1.11,7.13,7.13,0,0,1,1.56-1.27c2-.9,4.06-1.74,6.14-2.49a11.78,11.78,0,0,0,7.37-7.41c.74-2,1.54-4,2.35-6,.27-.64.66-1.23,1-1.85Z"/><path d="M29.93,57.76a35,35,0,0,1-1.54,4.67,3,3,0,0,1-2,1.48c-3.58.34-3.88-.11-2.78-3.55C26.7,50.54,30,40.75,32.9,30.87c.79-2.63,2.33-2.68,4.45-2.7s3.34.29,4.06,2.62C44.5,40.93,47.84,51,51.05,61.1c.31,1,1.09,2.17-.51,2.81s-4.12,0-4.61-1.32c-.61-1.56-.73-3.88-1.85-4.53-1.39-.81-3.58-.28-5.42-.29C35.79,57.75,32.91,57.76,29.93,57.76Zm12.76-5.37c-1.85-5.68-3.6-11.07-5.54-17l-5.43,17Z"/><path d="M59.57,46.23c0-5.25.07-10.5,0-15.74,0-2.08,1.05-2.28,2.64-2.25s2.75,0,2.74,2.15q-.11,15.75,0,31.5c0,2.17-1.26,2.07-2.76,2.11s-2.67-.19-2.62-2.24C59.64,56.59,59.57,51.41,59.57,46.23Z"/></svg>
+            </div>
+            <h4>AI 챗봇 서비스</h4>
+            <p>상담원 없는 고객상담, AI 챗봇으로 더욱 간편하게 고객센터를 자동으로 운영할 수 있는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="ai,call">
+          <!-- 다나가콜 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box">
+            <svg fill="#ffffff" id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M46.3,8.07c7.54,0,15.09,0,22.63,0A16,16,0,0,1,85.3,24.28c0,7.61,0,15.23,0,22.85,0,2.85-.75,3.35-3.49,2.42A14.39,14.39,0,0,0,79.68,49c-3.24-.54-3.25-.53-3.25-3.86q0-10.09,0-20.18c0-5.05-2.94-8-8-8q-22.18,0-44.37,0c-5.05,0-8,2.94-8,8q0,22.18,0,44.37c0,5,2.93,8,8,8,7.92,0,15.83,0,23.74,0,1.66,0,2.75.37,3.52,2a38,38,0,0,0,2.58,3.58c.39.62.84,1.66.58,2.12a2.8,2.8,0,0,1-2.09,1.16c-10.06.07-20.12.2-30.17,0-8-.16-14.92-7.36-15-15.31q-.15-23.63,0-47.26c0-8.23,7.28-15.36,15.55-15.44C30.62,8,38.46,8.08,46.3,8.07Z"/><path d="M78.73,57.75c.44,1,.9,1.94,1.3,2.93.82,2,1.58,4,2.41,5.93A11.24,11.24,0,0,0,89,72.83c2.19.86,4.39,1.71,6.56,2.61a21.79,21.79,0,0,1,2.26,1.3c-1.31.65-2.1,1.11-3,1.45-10.59,4.21-10.67,3.48-15,15a3.62,3.62,0,0,1-.36.8c-.36.51-.77,1-1.17,1.47A6.9,6.9,0,0,1,77.19,94c-.89-2-1.74-4.07-2.48-6.14A12,12,0,0,0,67,80.25c-2-.7-4-1.54-5.94-2.4a7.67,7.67,0,0,1-1.47-1.11,7.13,7.13,0,0,1,1.56-1.27c2-.9,4.06-1.74,6.14-2.49a11.78,11.78,0,0,0,7.37-7.41c.74-2,1.54-4,2.35-6,.27-.64.66-1.23,1-1.85Z"/><path d="M29.93,57.76a35,35,0,0,1-1.54,4.67,3,3,0,0,1-2,1.48c-3.58.34-3.88-.11-2.78-3.55C26.7,50.54,30,40.75,32.9,30.87c.79-2.63,2.33-2.68,4.45-2.7s3.34.29,4.06,2.62C44.5,40.93,47.84,51,51.05,61.1c.31,1,1.09,2.17-.51,2.81s-4.12,0-4.61-1.32c-.61-1.56-.73-3.88-1.85-4.53-1.39-.81-3.58-.28-5.42-.29C35.79,57.75,32.91,57.76,29.93,57.76Zm12.76-5.37c-1.85-5.68-3.6-11.07-5.54-17l-5.43,17Z"/><path d="M59.57,46.23c0-5.25.07-10.5,0-15.74,0-2.08,1.05-2.28,2.64-2.25s2.75,0,2.74,2.15q-.11,15.75,0,31.5c0,2.17-1.26,2.07-2.76,2.11s-2.67-.19-2.62-2.24C59.64,56.59,59.57,51.41,59.57,46.23Z"/></svg>
+            </div>
+            <h4>미스티콜</h4>
+            <p>AI 기술을 바탕으로 한 인공지능 전화 서비스로 반복적인 전화 상담을 AI상담사가 해주는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="auth,2fa,security" >
+          <!-- 2FA -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box auth">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="size-6">
+              <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+            </svg>
+            </div>
+            <h4>2FA(2차 인증)</h4>
+            <p>2단계 인증으로 로그인 시, 추가 인증 단계를 거쳐 계정 탈취 사고를 막아 주는 보안 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+        <div class="swiper-slide" data-tags="auth,social" >
+          <!-- 소셜 로그인 -->
+          <div class="card" data-aos="fade-left">
+            <div class="icon-box auth">
+            <svg fill="#ffffff"  viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.469 17.031l5.406 3.031c0.781-0.906 1.938-1.469 3.25-1.469 2.375 0 4.281 1.938 4.281 4.313s-1.906 4.281-4.281 4.281c-2.406 0-4.313-1.906-4.313-4.281 0-0.25 0.031-0.531 0.063-0.781l-5.563-3.094c-0.781 0.781-1.844 1.25-3.031 1.25-2.375 0-4.281-1.906-4.281-4.281s1.906-4.281 4.281-4.281c1.219 0 2.344 0.5 3.125 1.313l5.531-3c-0.063-0.313-0.125-0.625-0.125-0.938 0-2.375 1.906-4.313 4.313-4.313 2.375 0 4.281 1.938 4.281 4.313s-1.906 4.281-4.281 4.281c-1.219 0-2.313-0.469-3.094-1.313l-5.563 2.969c0.063 0.313 0.094 0.656 0.094 0.969 0 0.344-0.031 0.719-0.094 1.031z"></path>
+            </svg>
+            </div>
+            <h4>소셜 로그인</h4>
+            <p>포털 사이트, 소셜 미디어 등의 계정 으로 다른 여러 서비스에 로그인 또는 회원가입을 할 수 있는 상품</p>
+            <a href="#" class="read-more">자세히 보기 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="action">
+  <h2 class="title" data-aos="fade-up">
+    우리 서비스에 딱 맞는 솔루션을 제공해요
+  </h2>
+  <div class="tabs pc-tabs">
+      <div class="text-box" data-aos="fade-up">
+          <h2 class="subtitle">
+          매출을 이끌어 내는<br>
+          맞춤형 메시지
+          </h2>
+      </div>
+      <div class="form-box">
+          <div class="icon-box" data-aos="fade-up">
+              <div class="icon-btn on">
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 0.75H1C0.447715 0.75 0 1.19772 0 1.75V2.25C0 2.80228 0.447715 3.25 1 3.25H3.0119L5.73626 14.7312C6.18267 16.6125 7.84065 17.9508 9.76471 17.9987V18H17.5874C19.5362 18 21.2014 16.5956 21.5301 14.6747L22.7857 7.33734C22.9947 6.11571 22.0537 5 20.8143 5H5.99657L5.21623 1.7114C5.08251 1.14787 4.57918 0.75 4 0.75Z" fill="#333333"/>
+              <path d="M10 21C10 22.1046 9.10457 23 8 23C6.89543 23 6 22.1046 6 21C6 19.8954 6.89543 19 8 19C9.10457 19 10 19.8954 10 21Z" fill="#333333"/>
+              <path d="M21 21C21 22.1046 20.1046 23 19 23C17.8954 23 17 22.1046 17 21C17 19.8954 17.8954 19 19 19C20.1046 19 21 19.8954 21 21Z" fill="#333333"/>
+              </svg>
+                      
+                  <p>이커머스</p>
+              </div>
+              <div class="icon-btn">
+              <svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72361 0.0527864C7.58285 -0.0175955 7.41716 -0.0175955 7.2764 0.0527864L1.28617 3.0479C1.117 3.12806 1 3.30037 1 3.5V14H0V15H5V10H10V15H15V14H14V3.5C14 3.30044 13.8831 3.12818 13.714 3.04799L7.72361 0.0527864ZM7 5V3H8V5H10V6H8V8H7V6H5V5H7Z" fill="#333333"/>
+                <path d="M9 15V11H6V15H9Z" fill="#333333"/>
+              </svg>
+                      
+                  <p>병원</p>
+              </div>
+              <div class="icon-btn">
+              <svg fill="#333333" width="800px" height="800px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"/></svg>                              
+                  <p>교육/학원</p>
+              </div>
+              <div class="icon-btn">
+              <svg fill="#333333" width="800px" height="800px" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M14.427 14.75v.491H.573v-.49a.476.476 0 0 1 .475-.476h.411a.497.497 0 0 1-.002-.048v-.443a.476.476 0 0 1 .475-.475h.41V9.692h-.307a.554.554 0 1 1 0-1.108h10.963a.554.554 0 1 1 0 1.108h-.292v3.617h.362a.476.476 0 0 1 .475.475v.443a.364.364 0 0 1-.003.048h.412a.476.476 0 0 1 .475.475zm-1.72-7.043a5.182 5.182 0 1 0-10.364 0zm-9.188 5.602h1.109v-3.062a.554.554 0 1 0-1.109 0zm2.294-3.053v3.053h1.109v-3.053a.554.554 0 1 0-1.109 0zm2.294.008v3.045h1.109v-3.045a.554.554 0 1 0-1.109 0zm2.294.008v3.037h1.109v-3.037a.554.554 0 0 0-1.109 0z"/></svg>
+                  <p>공공기관</p>
+              </div>
+              <div class="icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill="#333333" fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z" clip-rule="evenodd" />
+              </svg>
+                             
+                  <p>스타트업</p>
+              </div>
+          </div>
+          <div class="tab-content on" data-aos="fade-left">         
+            <div class="flex">
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  </svg>
+                </div>
+                <h4>고객 유도하기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>쇼핑몰 신상 알림</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>쿠폰 알림 이벤트</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>장바구니 리마인드 알림</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                  </svg>
+                </div>
+                <h4>고객에게 알림주기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>결제 완료/취소/대기</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>배송 시작/완료/지연</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>장바구니 리마인드 알림</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-aos="fade-left">
+            <div class="flex">
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                  </svg>
+                </div>
+                <h4>고객에게 알림주기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>진료 예약 확정 안내</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>진료 변경/취소 안내</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                  </svg>
+                </div>
+                <h4>고객과 상담하기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>진료 문의 자동 응답</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>예약 변경/취소 요청 안내</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>의료비 안내</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-aos="fade-left">
+            <div class="flex">
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                  </svg>
+                </div>
+                <h4>고객에게 알림주기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>신규 강의 오픈 홍보</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>시험 일정 안내</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>성적 발표 안내</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                  </svg>
+                </div>
+                <h4>고객과 상담하기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>상담 예약 챗봇</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>예약 변경/취소 요청 안내</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>이벤트, 행사 알림</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-aos="fade-left">
+            <div class="flex">
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                  </svg>
+                </div>
+                <h4>고객에게 알림주기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>민원 처리 결과 안내</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>주민 대상 안내사항 공지</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>성적 발표 안내</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                  </svg>
+                </div>
+                <h4>고객과 상담하기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>실시간 민원 챗봇 대응</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>전화 ARS 자동 연결 시스템</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-aos="fade-left">
+            <div class="flex">
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  </svg>
+                </div>
+                <h4>고객 유도하기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>가입 유도 캠페인</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>가입 후 온보딩 발송</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                  </svg>
+                </div>
+                <h4>고객에게 알림주기</h4>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>이용 요금 결제 알림</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>비밀번호 변경 알림</p>
+                </div>
+                <div class="row">
+                  <img class="check" src="/img/check.svg" alt="check">
+                  <p>기능 업데이트 안내</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="qna">
+  <div class="container">
+   <div class="title-box">
+     <h2 class="title" data-aos="fade-up">자주 묻는 질문 <span style="color:#34495E">FAQ</span></h2>
+     <a href="#" class="main-btn" data-aos="fade-up">
+       API 가이드 바로가기
+      <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+     </a>
+   </div>
+    <div class="accordion" data-aos="fade-up">
+      <button type="button" class="accordion-button" aria-expanded="false">
+        <span> 메시지 발송 단가는 어떻게 되나요?</span>
+      </button>
+      <div class="accordion-content" role="region">
+        <div class="infoText">후불제 방식으로 이용 규모나 형태에 따라 맞춤형 단가 조정이 가능합니다. 자세한 내용은 문의 주시면 안내해드립니다</div>
+      </div>
+    </div>
+    <div class="accordion" data-aos="fade-up">
+      <button type="button" class="accordion-button" aria-expanded="false">
+      <span> 외부 시스템과 연동할 수 있나요?</span>
+      </button>
+      <div class="accordion-content" role="region">
+        <div class="infoText">API, Agent, SDK 등 다양한 연동 방식을 지원하여 기업 환경에 맞게 손쉽게 적용하실 수 있습니다.</div>
+      </div>
+    </div>
+    <div class="accordion" data-aos="fade-up">
+      <button type="button" class="accordion-button" aria-expanded="false">
+      <span>서비스 가입 및 계약 절차는 어떻게 되나요?</span>
+      </button>
+      <div class="accordion-content" role="region">
+        <div class="infoText">가입 후 비즈니스 인증만 완료하면 바로 이용할 수 있습니다. 대기업·엔터프라이즈 고객은 별도 상담을 통해 맞춤 지원을 받으실 수 있습니다.</div>
+      </div>
+    </div>
+    <div class="accordion" data-aos="fade-up">
+      <button type="button" class="accordion-button" aria-expanded="false">
+        <span>해외 발송이나 인증 문자도 가능한가요?</span>
+      </button>
+      <div class="accordion-content" role="region">
+        <div class="infoText">
+        인증·보안 문자는 물론, 100개국 이상 해외 발송을 지원합니다. 국가별 정책과 단가 안내는 문의 주시면 상세히 확인하실 수 있습니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="end">
+  <div class="img-box" data-aos="fade-up"></div>
+  <div class="gray-box">
+      <div class="text-box" >
+          <h2 data-aos="fade-up">지금 미스티를 통해<br>성공적인 메세지 서비스를 <br>시작하세요</h2>
+          <p data-aos="fade-up">실시간으로 고객에게 도달하는 스마트 메시징 솔루션입니다.<br>
+간편한 발송과 정교한 통계 분석으로 마케팅 효과를 극대화하세요.<br>
+안정적인 서버와 철저한 보안으로 안심하고 이용하실 수 있습니다.</p>
+          <a href="#" class="btn" data-aos="fade-up">
+              시작하기
+          </a>
+      </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+      <div class="flex mobile-flex">
+          <div class="wrap">
+              <a href="#">Term & Condition</a>
+              <a href="#">Term & Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cancellation Policy</a>
+          </div>
+          <div class="wrap">
+              <a href="#">Corperation Info</a>
+              <a href="#">Employment</a>
+              <a href="#">Epic Promise</a>
+              <a href="#">Vail resort</a>
+          </div>
+      </div>
+      <div class="flex">
+          <div class="wrap pc">
+              <a href="#">서비스</a>
+              <a href="#">문자 메시지</a>
+              <a href="#">3세대 문자 RCS</a>
+              <a href="#">카카오 비즈 메시지</a>
+          </div>
+          <div class="wrap pc">
+              <a href="#">회사 소개</a>
+              <a href="#">이용안내</a>
+              <a href="#">공지사항</a>
+              <a href="#">도입문의</a>
+          </div>
+          <div class="wrap">
+              <a href="#">고객센터</a>
+              <a href="#">서비스 이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">광고 및 스팸문자 정책</a>
+          </div>
+          <div class="alert-box">
+              <p>(주)미스티 | 대표자 : 홍길동 | 통신판매업신고 : 제 2023-xxxx-0961 호</ㅔ>
+              <p>서울특별시 금천구 가산디지털1로 xxx, xxxx호 | 사업자등록번호 : xxx-xx-xxxxx</p>
+              <a class="row" href="#">
+                  <img src="./img/call.svg" alt="">
+                  <p>대표번호 : 070-7777-0580</p>
+              </a>
+              <a class="row" href="#">
+                  <img src="./img/mail.svg" alt="">
+                  <p>danagasms@naver.com</p>
+              </a>
+          </div>               
+      </div>
+      <div class="downmost">
+          <p class="caption"> © COPYRIGHT 2023. KOREA (주)미스티 ALL rights reserved.</p>
+      </div>
+  </div>
+</footer>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({once: false });
+</script>
+</body>
+</html>
+
