@@ -108,8 +108,15 @@ header .logo {
   display: flex;
   align-items: center;
 }
-header .logo h2 {
-  color:white;
+
+header .logo a {
+  display: block;
+  height: 50px;
+}
+
+header .logo img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -207,6 +214,7 @@ header .logo h2 {
   line-height: 70px;
   border-bottom: 2px solid transparent;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 header.on .main-menu .menu-a {
@@ -280,6 +288,7 @@ header .btn-wrap .btn {
   border-radius: 6px;
   padding: 8px 16px;
   transition:0.2s;
+  white-space: nowrap;
 }
 
 header .btn-wrap .btn-main {
@@ -440,15 +449,15 @@ section.section-2nd {
 
 .section-2nd .bg-overlay {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: 
-    url('./img/bg-connected.png') no-repeat center center,
+    url('./img/bg-buildings.png') no-repeat center center,
     #eaf3ff;
   background-size: cover;
-  opacity: 0.3; /* 배경만 반투명 */
+  opacity: 0.2; /* 배경만 반투명 */
   z-index: 0;
 }
 
@@ -903,6 +912,21 @@ section.qna {
   height:630px;
   background: linear-gradient(to bottom right, #d5e0eb, #ccdae9);
   padding-top:70px;
+  position: relative;
+}
+
+section.qna .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url('./img/bg-tower.png') no-repeat center center,
+    #eaf3ff;
+  background-size: cover;
+  opacity: 0.3; /* 배경만 반투명 */
+  z-index: 0;
 }
 
 .arrow-right {
@@ -1088,6 +1112,9 @@ section.end .btn:hover {
   }
   section.end .gray-box p {
       width: 340px;
+  }
+  header .main-menu {
+    display: none;
   }
 }
 
