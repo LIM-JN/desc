@@ -12,6 +12,26 @@
   <title>Document</title>
 </head>
 <body>
+<div class="m-menu">
+  <form class="search-box">
+      <input type="text" class="search" name="search">
+  </form>
+  <div class="row">
+      <a href="#">문자발송</a>
+  </div>
+  <div class="row">
+      <a href="#">광고문자</a>
+  </div>
+  <div class="row">
+      <a href="#">선거문자</a>
+  </div>
+  <div class="row">
+      <a href="#">주소록</a>
+  </div>
+  <div class="row">
+      <a href="#">마이페이지</a>
+  </div>
+</div>
 <header>
     <div class="logo">
         <a href="#">
@@ -25,8 +45,8 @@
                     <li>단/장문 보내기</li>
                     <li>포토문자</li>
                     <li>대량문자</li>
-                    <li></li>
-                    <li></li>
+                    <li class="nothing"></li>
+                    <li class="nothing"></li>
                 </ul>
             </div>
         </a>
@@ -36,8 +56,8 @@
                   <li>단/장문 보내기</li>
                   <li>포토문자</li>
                   <li>대량문자</li>
-                  <li></li>
-                  <li></li>
+                  <li class="nothing"></li>
+                  <li class="nothing"></li>
               </ul>
             </div>
         </a>
@@ -46,9 +66,9 @@
         <a href="#" class="menu-a">주소록
             <div class="sub-menu">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="nothing"></li>
+                    <li class="nothing"></li>
+                    <li class="nothing"></li>
                     <li>주소록 관리</li>
                     <li>주소록 등록</li>
                 </ul>
@@ -69,19 +89,12 @@
     <div class="btn-wrap">
       <a href="#" class="btn btn-main">로그인</a>
       <a href="#" class="btn btn-sub">회원가입</a>
+      <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
     </div>
-    <div class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <!-- <div class="m-menu">
-        <a href="#">회사소개</a>
-        <a href="#">주요사업</a>
-        <a href="#">R&D</a>
-        <a href="#">인재채용</a>
-        <a href="#">고객센터</a>
-    </div> -->
 </header>
 <section class="swiper swiper-main">
   <div class="swiper-wrapper">
@@ -138,11 +151,11 @@
 
           <input type="radio" name="tab" id="tab4" value="auth">
           <label for="tab4" class="tab-btn">인증 서비스</label>
-        </div>
-        <div class="upper-btns">
-          <!-- 이 섹션 전용 컨트롤 (내부에 두는 게 안전) -->
-          <div class="swiper-button-prev swiper-prev-2nd"></div>
-          <div class="swiper-button-next swiper-next-2nd"></div>
+          <div class="upper-btns">
+            <!-- 이 섹션 전용 컨트롤 (내부에 두는 게 안전) -->
+            <div class="swiper-button-prev swiper-prev-2nd"></div>
+            <div class="swiper-button-next swiper-next-2nd"></div>
+          </div>
         </div>
       </div>
 
@@ -258,12 +271,12 @@
 </section>
 <section class="action">
   <h2 class="title" data-aos="fade-up">
-    우리 서비스에 딱 맞는 솔루션을 제공해요
+    서비스에 딱 맞는 솔루션을 제공해요
   </h2>
   <div class="tabs pc-tabs">
       <div class="text-box" data-aos="fade-up">
           <h2 class="subtitle">
-          매출을 이끌어 내는<br>
+          매출을 이끌어 내는
           맞춤형 메시지
           </h2>
       </div>
@@ -312,15 +325,15 @@
                 </div>
                 <h4>고객 유도하기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>쇼핑몰 신상 알림</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>쿠폰 알림 이벤트</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>장바구니 리마인드 알림</p>
                 </div>
               </div>
@@ -332,15 +345,15 @@
                 </div>
                 <h4>고객에게 알림주기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>결제 완료/취소/대기</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>배송 시작/완료/지연</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>장바구니 리마인드 알림</p>
                 </div>
               </div>
@@ -356,11 +369,11 @@
                 </div>
                 <h4>고객에게 알림주기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>진료 예약 확정 안내</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>진료 변경/취소 안내</p>
                 </div>
               </div>
@@ -372,15 +385,15 @@
                 </div>
                 <h4>고객과 상담하기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>진료 문의 자동 응답</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>예약 변경/취소 요청 안내</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>의료비 안내</p>
                 </div>
               </div>
@@ -396,15 +409,15 @@
                 </div>
                 <h4>고객에게 알림주기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>신규 강의 오픈 홍보</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>시험 일정 안내</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>성적 발표 안내</p>
                 </div>
               </div>
@@ -416,15 +429,15 @@
                 </div>
                 <h4>고객과 상담하기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>상담 예약 챗봇</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>예약 변경/취소 요청 안내</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>이벤트, 행사 알림</p>
                 </div>
               </div>
@@ -440,15 +453,15 @@
                 </div>
                 <h4>고객에게 알림주기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>민원 처리 결과 안내</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>주민 대상 안내사항 공지</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>성적 발표 안내</p>
                 </div>
               </div>
@@ -460,11 +473,11 @@
                 </div>
                 <h4>고객과 상담하기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>실시간 민원 챗봇 대응</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>전화 ARS 자동 연결 시스템</p>
                 </div>
               </div>
@@ -480,11 +493,11 @@
                 </div>
                 <h4>고객 유도하기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>가입 유도 캠페인</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>가입 후 온보딩 발송</p>
                 </div>
               </div>
@@ -496,15 +509,15 @@
                 </div>
                 <h4>고객에게 알림주기</h4>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>이용 요금 결제 알림</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>비밀번호 변경 알림</p>
                 </div>
                 <div class="row">
-                  <img class="check" src="/img/check.svg" alt="check">
+                  <img class="check" src="/icon/check.svg" alt="check">
                   <p>기능 업데이트 안내</p>
                 </div>
               </div>
@@ -512,6 +525,172 @@
           </div>
       </div>
   </div>
+  <div class="m-tabs">
+    <input type="radio" name="m-tab" id="a" checked="">
+    <label for="a">
+        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 0.75H1C0.447715 0.75 0 1.19772 0 1.75V2.25C0 2.80228 0.447715 3.25 1 3.25H3.0119L5.73626 14.7312C6.18267 16.6125 7.84065 17.9508 9.76471 17.9987V18H17.5874C19.5362 18 21.2014 16.5956 21.5301 14.6747L22.7857 7.33734C22.9947 6.11571 22.0537 5 20.8143 5H5.99657L5.21623 1.7114C5.08251 1.14787 4.57918 0.75 4 0.75Z" fill="#333333"/>
+              <path d="M10 21C10 22.1046 9.10457 23 8 23C6.89543 23 6 22.1046 6 21C6 19.8954 6.89543 19 8 19C9.10457 19 10 19.8954 10 21Z" fill="#333333"/>
+              <path d="M21 21C21 22.1046 20.1046 23 19 23C17.8954 23 17 22.1046 17 21C17 19.8954 17.8954 19 19 19C20.1046 19 21 19.8954 21 21Z" fill="#333333"/>
+              </svg>
+        <h4>이커머스</h4>
+    </label>
+    <div class="m-content">
+        <div class="m-btn-box">
+          <div class="">
+            <div class="first-row">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"></path>
+                </svg>
+              </div>
+              <h4>고객 유도하기</h4>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>쇼핑몰 신상 알림</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>쿠폰 알림 이벤트</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>장바구니 리마인드 알림</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <input type="radio" name="m-tab" id="b">
+    <label for="b">
+        <svg width="40px" height="40px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72361 0.0527864C7.58285 -0.0175955 7.41716 -0.0175955 7.2764 0.0527864L1.28617 3.0479C1.117 3.12806 1 3.30037 1 3.5V14H0V15H5V10H10V15H15V14H14V3.5C14 3.30044 13.8831 3.12818 13.714 3.04799L7.72361 0.0527864ZM7 5V3H8V5H10V6H8V8H7V6H5V5H7Z" fill="#333333"/>
+          <path d="M9 15V11H6V15H9Z" fill="#333333"/>
+        </svg>
+        <h4>병원</h4>
+    </label>
+    <div class="m-content">
+        <div class="m-btn-box">
+          <div class="">
+            <div class="first-row">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+                  </svg>
+              </div>
+              <h4>고객과 상담하기</h4>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>진료 문의 자동 응답</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>예약 변경/취소 요청 안내</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>의료비 안내</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <input type="radio" name="m-tab" id="c">
+    <label for="c">
+        <svg fill="#333333" width="40px" height="40px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"/></svg>
+        <h4>교육/학원</h4>
+    </label>
+    <div class="m-content">
+        <div class="m-btn-box">
+          <div class="">
+            <div class="first-row">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"></path>
+                  </svg>
+              </div>
+              <h4>고객에게 알림주기</h4>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>신규 강의 오픈 홍보</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>시험 일정 안내</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>성적 발표 안내</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <input type="radio" name="m-tab" id="d">
+    <label for="d">
+        <svg fill="#333333" width="40px" height="40px" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M14.427 14.75v.491H.573v-.49a.476.476 0 0 1 .475-.476h.411a.497.497 0 0 1-.002-.048v-.443a.476.476 0 0 1 .475-.475h.41V9.692h-.307a.554.554 0 1 1 0-1.108h10.963a.554.554 0 1 1 0 1.108h-.292v3.617h.362a.476.476 0 0 1 .475.475v.443a.364.364 0 0 1-.003.048h.412a.476.476 0 0 1 .475.475zm-1.72-7.043a5.182 5.182 0 1 0-10.364 0zm-9.188 5.602h1.109v-3.062a.554.554 0 1 0-1.109 0zm2.294-3.053v3.053h1.109v-3.053a.554.554 0 1 0-1.109 0zm2.294.008v3.045h1.109v-3.045a.554.554 0 1 0-1.109 0zm2.294.008v3.037h1.109v-3.037a.554.554 0 0 0-1.109 0z"/></svg>                      
+        <h4>공공기관</h4>
+    </label>
+    <div class="m-content">
+        <div class="m-btn-box">
+          <div class="">
+            <div class="first-row">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"></path>
+                  </svg>
+              </div>
+              <h4>고객에게 알림주기</h4>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>민원 처리 결과 안내</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>주민 대상 안내사항 공지</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>실시간 민원 챗봇 대응</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <input type="radio" name="m-tab" id="e">
+    <label for="e">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill="#333333" fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z" clip-rule="evenodd" />
+        </svg>
+        <h4>스타트업</h4>
+    </label>
+    <div class="m-content">
+      <div class="m-btn-box">
+        <div class="">
+            <div class="first-row">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"></path>
+                  </svg>
+              </div>
+              <h4>고객 유도하기</h4>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>가입 유도 캠페인</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>가입 후 온보딩 발송</p>
+            </div>
+            <div class="row">
+              <img class="check" src="/icon/check.svg" alt="check">
+              <p>기능 업데이트 안내</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
 </section>
 <section class="qna">
   <div class="bg-overlay"></div>
@@ -579,16 +758,16 @@
   <div class="container">
       <div class="flex mobile-flex">
           <div class="wrap">
-              <a href="#">Term & Condition</a>
-              <a href="#">Term & Use</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Cancellation Policy</a>
+              <a href="#">서비스</a>
+              <a href="#">문자 메세지</a>
+              <a href="#">3세대 문자 RCS</a>
+              <a href="#">카카오 비즈 메시지</a>
           </div>
           <div class="wrap">
-              <a href="#">Corperation Info</a>
-              <a href="#">Employment</a>
-              <a href="#">Epic Promise</a>
-              <a href="#">Vail resort</a>
+              <a href="#">회사소개</a>
+              <a href="#">이용안내</a>
+              <a href="#">공지사항</a>
+              <a href="#">도입문의</a>
           </div>
       </div>
       <div class="flex">
@@ -614,11 +793,11 @@
               <p>(주)미스티 | 대표자 : 홍길동 | 통신판매업신고 : 제 2023-xxxx-0961 호</ㅔ>
               <p>서울특별시 금천구 가산디지털1로 xxx, xxxx호 | 사업자등록번호 : xxx-xx-xxxxx</p>
               <a class="row" href="#">
-                  <img src="./img/call.svg" alt="">
+                  <img src="./icon/call.svg" alt="">
                   <p>대표번호 : 010-7579-9205</p>
               </a>
               <a class="row" href="#">
-                  <img src="./img/mail.svg" alt="">
+                  <img src="./icon/mail.svg" alt="">
                   <p>aiwhen34@gmail.com</p>
               </a>
           </div>               

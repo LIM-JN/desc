@@ -110,13 +110,15 @@ header .logo {
 }
 
 header .logo a {
-  display: block;
+  display: flex;
   height: 50px;
 }
 
 header .logo img {
   max-width: 100%;
   max-height: 100%;
+  flex-shrink: 0;
+  width: 190px;
 }
 
 
@@ -152,12 +154,12 @@ header .logo img {
 .menu-btn {
   width: 25px;
   height: 19px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-direction: column;
   z-index: 999;
   cursor: pointer;
-  display: none;
+  margin-left:24px;
 }
 
 .menu-btn span {
@@ -180,26 +182,61 @@ header .logo img {
 } 
 
 .m-menu {
-  display: none;
+  display: block;
   width: 240px;
   height: 100%;
   position:fixed;
-  background-color: #333333;
   right:0;
-  top: 0;
   padding-top: 120px;
+  right: -240px;
+  top: 70px;
+  z-index: 999;
+  background-color: #333539;
+  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, .2);
+  transition: 0.3s;
+  padding: 10px;
 }
 
-.m-menu.on {
-  display: block;
-  z-index: 99;
+.m-menu .search-box {
+    position: relative;
 }
+
+.m-menu .search {
+    width: 220px;
+    height: 36px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #4f4f4f;
+    padding: 10px 34px 10px 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.m-menu .search-box::after {
+    content: "";
+    top: 6px;
+    right: 10px;
+    height: 22px;
+    width: 22px;
+    background-color: #0C1B32;
+    position: absolute;
+    background: url(./icon/search.svg) center center / cover no-repeat;
+}
+.m-menu .row {
+      border-bottom: 1px solid #dddddd;
+}
+
 
 .m-menu a {
-  font-size: 18px;
+  font-size: 16px;
   display: block;
-  padding:19px 40px;
+  padding:19px 10px;
+  color:white;
+  font-weight: 300;
 }
+.m-menu a:hover {
+  text-decoration: underline;
+}
+
 .main-menu {
   display: flex;
   height: 100%;
@@ -238,7 +275,7 @@ header .sub-menu {
   z-index: -9;
   display: flex;
   justify-content: center;
-  padding-right: 130px;
+  cursor: default;
 }
 
 .menu-a.on .sub-menu {
@@ -270,7 +307,9 @@ header .sub-menu {
   color:#db4342;
 }
 
-
+.sub-menu .nothing {
+  cursor: default;
+}
 
 /* 다시 현실로 */ 
 
@@ -478,7 +517,8 @@ section.section-2nd {
 .tab-slider .tab-option {
   display: flex;
   justify-content: flex-start;
-
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .tab-slider .tab-option .tab-btn {
@@ -493,6 +533,9 @@ section.section-2nd {
   margin-right:14px;
   font-weight:500;
   user-select: none;
+  white-space: nowrap;
+  height: 42px;
+  margin-bottom: 12px;
 }
 .tab-slider .tab-option .tab-btn:last-child {
   margin-right:0;
@@ -619,6 +662,11 @@ section.section-2nd {
   justify-content: space-between;
   align-items: center;
   margin-right: 70px;
+  flex-wrap: wrap;
+}
+
+.tab-slider .upper .upper-btns {
+  margin-left: auto;
 }
 
 /* 여기서부터 세번째 섹션 class="action" */
@@ -638,6 +686,7 @@ section.action .tabs {
   display: flex;
   justify-content: space-around;
   min-height: 250px;
+  flex-wrap: wrap;
 }
 section.action .tabs .text-box {
   width: 280px;
@@ -700,6 +749,74 @@ section.action .tabs .tab-content.on {
   display: block;
 }
 
+.m-tabs {
+    display: none;
+    margin-top: 30px;
+}
+
+.m-tabs label {
+    width: 100%;
+    height: 60px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    position:relative;
+    margin-top: 8px;
+}
+.m-tabs label::after {
+    position:absolute;
+    right:20px;
+    content:"";
+    width: 20px;
+    height: 20px;
+    background:url(./icon/plus.svg) center center / cover no-repeat;
+}
+.m-tabs label svg {
+    margin: 0 20px 0 10px;
+    display: block;
+}
+.m-tabs input[type="radio"] {
+    display: none;
+}
+.m-tabs input:checked + label {
+    background-color: #4f4f4f;
+    color:#ffffff;
+}
+.m-tabs input:checked + label svg {
+    fill:#ffffff;
+}
+.m-tabs input:checked + label svg path {
+    fill:#ffffff;
+}
+
+.m-tabs input:checked + label::after {
+    background:url(./icon/minus.svg) center center / cover no-repeat;
+    width: 24px;
+    height: 24px;
+    right:18px;
+}
+
+.m-tabs input:checked + label h4 {
+  color:white;
+}
+
+.m-content {
+    display: block;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #dddddd;
+    transition:0.3s;
+    overflow: hidden;
+}
+
+.m-tabs input:checked + label + .m-content {
+    display: block;
+    height: 150px;
+    border: 1px solid #4f4f4f;
+}
+
+
 section.action .flex  {
   display: flex;
   justify-content: space-between;
@@ -729,6 +846,7 @@ section.action .yellow-btn {
 
 section.action h2.title {
   font-size: 48px;
+  text-align: center;
 }
 
 section.action h2.subtitle {
@@ -763,7 +881,7 @@ section.action .card:last-child {
   margin-right: 0;
 }
 
-section.action .card .icon {
+section.action .icon {
   width:46px;
   height: 46px;
   display: inline-block;
@@ -771,27 +889,27 @@ section.action .card .icon {
   background-color:#aaa;
 }
 
-section.action .card h4 {
+section.action  h4 {
   font-size:24px;
   margin:12px 0px 18px
 }
-section.action .card img.check {
+section.action  img.check {
   width: 24px;
   height:24px;
   margin-right:12px;
 }
 
-section.action .card .row {
+section.action .row {
   display: flex;
   align-items: center;
   margin-top: 4px;
 }
 
-section.action .card .row p {
+section.action .row p {
   font-size: 14px;
 }
 
-section.action .card .icon {
+section.action .icon {
   background: linear-gradient(to bottom right, #a8c4d6, #7b919e);
   width:46px;
   height:46px;
@@ -802,9 +920,46 @@ section.action .card .icon {
   border-radius: 6px;
 }
 
-section.action .card .icon svg {
+section.action  .icon svg {
   width: 30px;
   height: 30px;
+}
+
+section.action .m-tabs h4 {
+  font-size: 18px;
+
+}
+
+
+section.action .m-btn-box {
+    display: flex;
+    justify-content: start;
+    padding: 8px 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.action .m-btn-box .first-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.action .m-btn-box .icon {
+  width: 36px;
+  height: 36px;
+  margin-right:12px;
+  margin-bottom:0px;
+}
+
+section.action .m-btn-box .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+section.action  .m-tabs h4 {
+  margin: 12px 0px;
 }
 
 /* 푸터 먼저 적어둠 */
@@ -827,7 +982,7 @@ footer .flex {
 footer .wrap {
   border-right: 1px solid #cccccc;
   width: 250px;
-  padding:0px 40px;
+  padding:0px 20px;
 }
 
 footer .wrap:nth-child(3) {
@@ -841,7 +996,8 @@ footer .wrap a {
   margin-bottom: 20px;
   display: block;
   font-size: 14px;
-  padding-right: 30px;
+  padding-right: 0px;
+  white-space: nowrap;
 }
 footer .wrap p:last-child {
   margin-bottom: 0;
@@ -850,7 +1006,7 @@ footer .wrap p:last-child {
 
 footer .alert-box {
   background-color: #D9D9D9;
-  width: 40%;
+  width: 50%;
   max-width: 300px;
   min-height: 180px;
   height: auto;
@@ -939,13 +1095,19 @@ section.qna .title-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 54px;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+}
+
+section.qna .title-box h2 {
+  margin-bottom: 20px;
 }
 
 
 
 section.qna .container {
   max-width: 1080px;
+  padding: 0px 20px
 }
 
 section.qna .title-box h2 {
@@ -1013,6 +1175,7 @@ section.end {
   flex-wrap: wrap;
   width: auto;
   justify-content: center;
+  overflow: hidden;
 }
 
 section.end .gray-box {
@@ -1051,7 +1214,6 @@ section.end h2 {
 }
 section.end p {
   font-size: 15px;
-  white-space: nowrap;
   line-height: 24px;
   margin-bottom: 34px;
 }
@@ -1078,6 +1240,13 @@ section.end .btn:hover {
 
 @media screen and (max-width:1400px) {
 
+  section.action .tabs .text-box {
+    width: auto;
+  }
+  section.action h2 {
+    margin-bottom: 50px;
+  }
+
   section.end .img-box {
       margin-left: -180px;
       width: 540px;
@@ -1096,6 +1265,11 @@ section.end .btn:hover {
   }
 }
 @media screen and (max-width:1032px) {
+
+  section.action h2.title {
+    font-size: 40px;
+  }
+
   section.end .img-box {
       margin-left: auto;
       margin-right: auto;
@@ -1116,6 +1290,39 @@ section.end .btn:hover {
   header .main-menu {
     display: none;
   }
+  .menu-btn {
+    display: flex;
+  }
+  .m-menu.on {
+    display: block;
+    z-index: 99;
+    right: 0px;
+  }
+
+  .mobile-flex {
+      display: flex;
+  }
+
+  footer {
+      height: auto;
+      padding:50px 0;
+  }
+  footer .container {
+      max-width: 500px;
+      min-width: 375px;
+  }
+  footer .wrap {
+      border-right:0px ;
+  }
+  .pc {
+      display: none;
+  }
+  .tab-slider .card-wrap .card:last-child {
+    margin: auto;
+  }
+  .tab-slider h2 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width:800px) {
@@ -1128,8 +1335,34 @@ section.end .btn:hover {
   section.end {
       overflow-x: hidden;
   }
+  .tab-slider .upper {
+    margin-right: 12px;
+  }
+  .tab-slider .card-wrap .card {
+    width: 310px;
+  }
+  .swiper-main .text-box h2 {
+    font-size: 42px;
+  }
+  section.action .tabs {
+    display: none;
+  }
+  .m-tabs {
+    display: block;
+  }
+  .accordion-button {
+    font-size: 17px;
+  }
 } 
 
+@media screen and (max-width:600px) {
+  section.qna {
+    height: 700px;
+  }
+  header .btn.btn-main,header .btn.btn-sub {
+    display: none;
+  }
+}
 
 @keyframes fadeSlideIn {
   0% {

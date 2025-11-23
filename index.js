@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',() => {
     },
     breakpoints: {
       740:  { slidesPerView: 2, spaceBetween: 20 },
-      1024: { slidesPerView: 3, spaceBetween: 24 },
+      1032: { slidesPerView: 3, spaceBetween: 24 },
     },
     observer: false,
     observeParents: false,
@@ -127,11 +127,11 @@ document.addEventListener('DOMContentLoaded',() => {
   const TabText = document.querySelector('.action .text-box')
 
   const TextArr = [
-      `<h2 class="subtitle">매출을 이끌어 내는<br>맞춤형 메시지</h2>`,
-      `<h2 class="subtitle">고객 만족을 높이는<br>커뮤니케이션</h2>`,
-      `<h2 class="subtitle">학습 몰입을 높이는<br>메시지 전략</h2>`,
-      `<h2 class="subtitle">행정 효율을 높이는<br>메시지 자동화</h2>`,
-      `<h2 class="subtitle">성장에 필요한 모든<br>메시지를 한 번에</h2>`
+      `<h2 class="subtitle">매출을 이끌어 내는 맞춤형 메시지</h2>`,
+      `<h2 class="subtitle">고객 만족을 높이는 커뮤니케이션</h2>`,
+      `<h2 class="subtitle">학습 몰입을 높이는 메시지 전략</h2>`,
+      `<h2 class="subtitle">행정 효율을 높이는 메시지 자동화</h2>`,
+      `<h2 class="subtitle">성장에 필요한 모든 메시지를 한 번에</h2>`
   ]
 
   const TabContent = document.querySelectorAll('.action .tab-content')
