@@ -126,21 +126,16 @@ document.addEventListener('DOMContentLoaded',() => {
 
   const TabText = document.querySelector('.action .text-box .subtitle')
 
-  const TextArr = [
-      `매출을 이끌어 내는 맞춤형 메시지`,
-      `고객 만족을 높이는 커뮤니케이션`,
-      `학습 몰입을 높이는 메시지 전략`,
-      `행정 효율을 높이는 메시지 자동화`,
-      `성장에 필요한 모든 메시지를 한 번에`
-  ]
 
   const TabContent = document.querySelectorAll('.action .tab-content')
 
   for (let i = 0; i < IconButtons.length; i++) {
     IconButtons[i].addEventListener("click", () => {
+      
       // 탭 텍스트 변경
-      TabText.innerText = TextArr[i];
-  
+      const subtitle = IconButtons[i].dataset.subtitle;
+      TabText.innerText = subtitle;
+      
       // 탭 버튼 & 콘텐츠 활성화
       IconButtons[i].classList.add('on');
       TabContent[i].classList.add('on');
